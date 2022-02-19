@@ -1,0 +1,15 @@
+<mat-card class="card"> 
+    <mat-card-header>
+        <img class="card-img" [src]="data.avatar" alt="Card image cap">
+        <mat-card-title>{{data.first_name}}</mat-card-title>
+        <mat-card-subtitle>{{data.last_name}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+
+    </mat-card-content>
+    <mat-card-actions>
+        <a routerLink="/viewUser/{{data.id}}"> <button mat-raised-button  class="">View details</button>
+        </a>
+        <app-my-loader></app-my-loader>
+    </mat-card-actions>
+</mat-card>

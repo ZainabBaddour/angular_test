@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>{{user.data.first_name}}'s Profile</h1>
+<div class="row">
+  <div class="col">
+  <div>
+    <img [src]="user.data.avatar" width="200" />
+    <h1>{{user.data.first_name}}</h1>
+    <h4>{{user.data.last_name}}</h4>
+  </div>
+
+  <div>
+    <p>
+      {{user.support.text}}
+    </p>
+    <ul>
+      <li><a href="user.support.url">Url</a></li>
+    </ul>
+  </div>
+  <a routerLink="/home"> <button mat-raised-button  class="">Back</button></a>
+</div>
+</div>
+</div>

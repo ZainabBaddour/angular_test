@@ -1,0 +1,7 @@
+<mat-toolbar class="d-flex align-items-center ">
+    <app-input-select class="px-2"  inputHeader="Search Field" [options]="searchFields" (selectedField)="fieldSelected($event)">
+    </app-input-select>
+    <app-input-value inputHeader="Search Text" [isEnabled]="searchField ? true : false"
+        (inputValue)="onInputChanged($event)">
+    </app-input-value>
+</mat-toolbar>
